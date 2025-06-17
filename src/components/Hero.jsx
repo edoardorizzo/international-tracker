@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
         <div
@@ -11,7 +13,9 @@ export default function Hero() {
                     Sfida e divertiti con i tuoi amici!
                 </h1>
                 <p>Prova ora International Tracker, il portale per creare e gestire i tuoi tornei di carte.</p>
-                <button className="primary_button text-center mt-4">Inizia subito</button>
+                <div className="primary_button text-center mt-4">
+                    <Link href="/login">Inizia subito</Link>
+                </div>
             </div>
         </div>
     )
