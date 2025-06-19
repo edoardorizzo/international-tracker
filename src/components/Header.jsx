@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import HeaderLogo from "./HeaderLogo"
 
 export default function Header({ menuOpen, setMenuOpen }) {
 
@@ -19,9 +20,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
                     <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                 </svg>
             </button>
-            <div className="logo-container h-14">
-                <img className="h-full" src="/Logo.svg" alt="International Tracker Logo" />
-            </div>
+            <HeaderLogo></HeaderLogo>
             <div className="sigin flex justify-between items-center gap-4">
                 <Link href="/login" target="_blank" className="primary_button">Accedi</Link>
                 <Link href="/signin" target="_blank" className="secondary_button hidden md:block">Registrati</Link>

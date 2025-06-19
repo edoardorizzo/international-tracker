@@ -10,8 +10,6 @@ function remove(storageName) {
     localStorage.removeItem(storageName);
 }
 
-const handleStorage = {
+export const handleStorage = {
     set, get, remove
 }
-
-export default handleStorage;

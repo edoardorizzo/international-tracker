@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "http://192.168.1.8:8000/api/tournaments/create";
+const API_URL = "http://192.168.1.4:8000/api/tournaments/create";
 
 export default async function sendTournamentAndPlayerName(payload) {
     try {

@@ -77,12 +77,6 @@ input {
   height: 40px;
 }
 
-/* paragraph */
-p {
-  color: var(--white);
-  margin: 0;
-}
-
 .p-small {
   font-size: 12px;
 }
