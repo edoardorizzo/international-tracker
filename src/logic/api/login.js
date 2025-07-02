@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = "http://192.168.1.4:8000/api/token/pair";
+const API_URL = "http://127.0.0.1:8000/api/token/pair";
 
 async function doPost(payload) {
     try {

@@ -1,12 +1,15 @@
+"use client"
+
 import React from 'react'
 import { useRouter } from 'next/navigation';
 
 function StartMatchComp() {
-    let router = useRouter();
+    const router = useRouter();
 
     const handleNavigate = () => {
-        router("/tournament");
+        router.push('/create-tournament');
     }
+
     return (
         <div className='background_start_match'>
             <h2 className='mb-3 text-white'>Traccia il tuo torneo con International!</h2>
